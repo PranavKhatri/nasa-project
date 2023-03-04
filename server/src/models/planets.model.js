@@ -65,8 +65,8 @@ async function savePlanet(planet){
         },{
             keplerName: planet.kepler_name,
         },{
-            upset: true,
-        })
+            upsert: true,
+        });
     }
 
     catch(err){
