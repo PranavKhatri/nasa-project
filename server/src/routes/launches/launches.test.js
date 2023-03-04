@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../../app');
-
-const { loadPlanetsData , loadLaunchData } = require('../../models/planets.model');
+const { loadLaunchData } = require('../../models/launches.model');
+const { loadPlanetsData } = require('../../models/planets.model');
 
 const { mongoConnect, mongoDisconnect } = require('../../services/mongo');
 
